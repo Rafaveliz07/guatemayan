@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda de Artesanías</title>
+<style>
+  /* Estilos Generales */
+  body {
+    background-color: #fdf6e3;
+    color: #073642;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  header {
+    background-color: #268bd2;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    top: 50%;
+    position: relative;
+    height: 70px;
+  }
+
+  header h1 {
+    display: inline;
+    top: 0;
+    bottom: 50%;
+  }
+
+  header img {
+    display: inline;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  /* Estilos de los Productos */
+  .producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 25%;
+  }
+
+  .producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .producto img {
+    max-width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+
+  h2 {
+    color: #268bd2;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  /* Botón de Compra (Añadir si es necesario) */
+  .btn-comprar {
+    background-color: #2aa198;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-comprar:hover {
+    background-color: #268bd2;
+  }
+
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .producto {
+      margin: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.imgur.com/9nKFcL7.png" alt="">
+    <h1>Guatemayan</h1>
+</header>
+
+
+<div class="producto">
+  <img src="https://forum.com.gt/files/user10/ARTESANIAS%20DE%20GUATEMALA/Origen-de-la-palabra-Caite-en-Guatemala1.jpg" alt="Caites">
+  <h2>Caites</h2>
+  <p>These caites were created in Panajachel by the hands of working women.</p>
+  <p>Precio: Q80.00</p>
+  <!-- Botón de Compra (Añadir si es necesario) -->
+  <button class="btn-comprar">Buy</button>
+</div>
+
+<div class="producto">
+  <img src="https://cdn-italiani-media.italiani.it/site-guatemala/sites/106/2021/01/Artesanias-tpicas-Textil.jpg" alt="Mantel">
+  <h2>Tablecloths</h2>
+  <p>These tablecloths were created in Izabal in the hands of women who dedicate themselves to sewing.</p>
+  <p>Precio: Q100.00</p>
+  <!-- Botón de Compra (Añadir si es necesario) -->
+  <button class="btn-comprar">Buy</button>
+</div>
+
+<div class="producto">
+    <img src="https://live.staticflickr.com/217/520862712_b7626c4e9a_b.jpg" alt="Paintings">
+    <h2>Paintings</h2>
+    <p>These paintings come from San Marcos and Alta Verapaz, created by men and women dedicated to art.</p>
+    <p>Precio: Q250.00</p>
+    <!-- Botón de Compra (Añadir si es necesario) -->
+    <button class="btn-comprar">Buy</button>
+  </div>
+
+  <div class="producto">
+    <img src="https://cdn-italiani-media.italiani.it/site-guatemala/sites/106/2021/01/Artesanias-tipica.jpg" alt="Nahual">
+    <h2>Nahual</h2>
+    <p>These nahuals come from Jalapa made by an association that supports this sector.</p>
+    <p>Precio: $25.00</p>
+    <!-- Botón de Compra (Añadir si es necesario) -->
+    <button class="btn-comprar">Buy</button>
+  </div>
+
+  <div class="producto">
+    <img src="https://aprende.guatemala.com/wp-content/uploads/2017/04/La-cer%C3%A1mica-artesanal-en-Guatemala.jpg" alt="Vases">
+    <h2>Vases</h2>
+    <p>These come from El Progreso, created by people who are dedicated to ceramic crafts.</p>
+    <p>Precio: Q100.00</p>
+    <!-- Botón de Compra (Añadir si es necesario) -->
+    <button class="btn-comprar">Buy</button>
+  </div>
+
+  <div class="producto">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-9W_G9CSaMMWpUyio5gLwb6_UwvNGXSi5_IPReMp1nBNt3gl9JAewE4ihKezFWHjrkBE&usqp=CAU" alt="Willet">
+    <h2>Willet</h2>
+    <p>These willet come from Totonicapán, created by single mothers</p>
+    <p>Precio: Q80.00</p>
+    <!-- Botón de Compra (Añadir si es necesario) -->
+    <button class="btn-comprar">Buy</button>
+  </div>
+
+<!-- Agrega más productos según sea necesario -->
+
+</body>
+</html>
