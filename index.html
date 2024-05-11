@@ -104,6 +104,40 @@
       margin: 10px;
     }
   }
+
+  .pene {
+    display: inline-block;
+    width: 80%;
+    position: absolute;
+    right: 0%;
+  }
+
+  .begina {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+  }
+
+  article {
+    justify-content: right;
+    position: relative;
+  }
+
+  @media (min-width: 768px){
+  .begina {
+    position: fixed;
+    z-index: -1
+  }
+}
 </style>
 </head>
 <body>
@@ -112,8 +146,12 @@
     <img src="https://i.imgur.com/9nKFcL7.png" alt="">
     <h1>Guatemayan</h1>
 </header>
+<article>
+<div class="begina">
+ <p>Our company focuses on the selling of crafts via social media, emphasizing the beauty and authenticity of each piece. We collaborate with local artists from various communities, purchasing their products at fair prices and retailing them at a slightly higher price. Profits are reinvested in the same communities to fund social, educational, and infrastructure development projects. In addition to supporting local culture and art, we are dedicated to the well-being of those who create it, ensuring that they receive a fair wage for their efforts while also contributing to the advancement of their communities.</p>
+</div>
 
-
+<div class="pene">
 <div class="producto">
   <img src="https://forum.com.gt/files/user10/ARTESANIAS%20DE%20GUATEMALA/Origen-de-la-palabra-Caite-en-Guatemala1.jpg" alt="Caites">
   <h2>Caites</h2>
@@ -167,8 +205,10 @@
     <!-- Botón de Compra (Añadir si es necesario) -->
     <button class="btn-comprar">Buy</button>
   </div>
-
+</div>
+</article>
 <!-- Agrega más productos según sea necesario -->
 
 </body>
 </html>
+
